@@ -6,8 +6,8 @@ python acme_tiny.py --account-key ./account.key --csr ./domain.csr --acme-dir /v
 cat domain.key signed.crt lets-encrypt-x1-cross-signed.pem > certificate.pem
 cp certificate.pem /home/Vauff/.znc/znc.pem
 cp certificate.pem /home/Vauff/.config/quassel-irc.org/quasselCert.pem
+cp domain.key /etc/httpd
+cp signed.crt /etc/httpd
 rm account.key
-rm domain.key
 rm domain.csr
-rm signed.crt
 echo New ceritificate created successfully!
