@@ -8,6 +8,4 @@ cp certificate.pem /home/Vauff/.znc/znc.pem
 cp certificate.pem /home/Vauff/.config/quassel-irc.org/quasselCert.pem
 cp domain.key /etc/httpd
 cp signed.crt /etc/httpd
-rm account.key
-rm domain.csr
 echo New ceritificate created successfully!
